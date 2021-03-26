@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="simplified_model_v4">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00035623 0.042729 0.000432"
+        rpy="0 0 0" />
+      <mass
+        value="3.0204" />
+      <inertia
+        ixx="0.017685"
+        ixy="-5.8993E-06"
+        ixz="-1.545E-05"
+        iyy="0.063399"
+        iyz="-5.7297E-06"
+        izz="0.046399" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simplified_model_v4/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="Aluminum ">
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simplified_model_v4/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel 1">
+    <inertial>
+      <origin
+        xyz="9.9621E-09 2.4493E-09 -0.011873"
+        rpy="0 0 0" />
+      <mass
+        value="0.022688" />
+      <inertia
+        ixx="9.1457E-06"
+        ixy="2.6492E-14"
+        ixz="-3.7613E-13"
+        iyy="9.1452E-06"
+        iyz="-2.2498E-13"
+        izz="1.5385E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simplified_model_v4/meshes/wheel 1.STL" />
+      </geometry>
+      <material
+        name="Rubber">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simplified_model_v4/meshes/wheel 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w_1"
+    type="revolute">
+    <origin
+      xyz="0.155 0.15 0.0145"
+      rpy="1.5708 -3.14 -3.14" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel 1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.79769e+308"
+      upper="1.79769e+308"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel 2">
+    <inertial>
+      <origin
+        xyz="9.9621E-09 2.4493E-09 -0.011873"
+        rpy="0 0 0" />
+      <mass
+        value="0.022688" />
+      <inertia
+        ixx="9.1457E-06"
+        ixy="2.6492E-14"
+        ixz="-3.7613E-13"
+        iyy="9.1452E-06"
+        iyz="-2.2498E-13"
+        izz="1.5385E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simplified_model_v4/meshes/wheel 2.STL" />
+      </geometry>
+      <material
+        name="Rubber">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simplified_model_v4/meshes/wheel 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w_2"
+    type="revolute">
+    <origin
+      xyz="0.155 -0.15 0.0145"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel 2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.79769e+308"
+      upper="1.79769e+308"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel 3">
+    <inertial>
+      <origin
+        xyz="1.2724E-08 2.5822E-09 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.022688" />
+      <inertia
+        ixx="9.1457E-06"
+        ixy="4.479E-14"
+        ixz="-4.7887E-13"
+        iyy="9.1452E-06"
+        iyz="-2.5601E-13"
+        izz="1.5385E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simplified_model_v4/meshes/wheel 3.STL" />
+      </geometry>
+      <material
+        name="Rubber">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simplified_model_v4/meshes/wheel 3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w_3"
+    type="revolute">
+    <origin
+      xyz="-0.155 0.1496 0.0145"
+      rpy="1.5708 3.14 3.14" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel 3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.79769e+308"
+      upper="1.79769e+308"
+      effort="0"
+      velocity="0" />
+  </joint>
+   <link
+    name="wheel 4">
+     <inertial>
+      <origin
+        xyz="9.9571E-09 -2.5462E-09 -0.011873"
+        rpy="0 0 0" />
+      <mass
+        value="0.022688" />
+      <inertia
+        ixx="9.1457E-06"
+        ixy="4.327E-14"
+        ixz="-3.8349E-13"
+        iyy="9.1452E-06"
+        iyz="-2.4826E-13"
+        izz="1.5385E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simplified_model_v4/meshes/wheel 4.STL" />
+      </geometry>
+      <material
+        name="Rubber">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simplified_model_v4/meshes/wheel 4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w_4"
+    type="revolute">
+    <origin
+      xyz="-0.155 -0.1496 0.0145"
+      rpy="-1.5707 3.14 -3.14" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel 4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.79769e+308"
+      upper="1.79769e+308"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+
+
+  <gazebo>
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+      <alwaysOn>true</alwaysOn>
+      <legacyMode>false</legacyMode>
+      <updateRate>100</updateRate>
+      <leftJoint>w_3</leftJoint>
+      <rightJoint>w_4</rightJoint>
+      <wheelSeparation>2</wheelSeparation>
+      <wheelDiameter>0.65</wheelDiameter>
+     <!-- <torque>20</torque>-->
+      <wheelAcceleration>0</wheelAcceleration>
+      <wheelTorque>50</wheelTorque>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <publishWheelTF>true</publishWheelTF>
+      <publishOdomTF> true</publishOdomTF>
+      <publishWheelJointState>True</publishWheelJointState>
+      <publishTf>true</publishTf>
+      <odometrySource>encoder</odometrySource>
+    </plugin>
+  </gazebo>
+
+</robot>
